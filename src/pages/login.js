@@ -4,6 +4,8 @@ import { Modal, Button, Form, Spinner } from "react-bootstrap"; // Spinner impor
 import axios from "axios";
 import { toast } from 'react-toastify';
 
+const API = import.meta.env.VITE_API_URL;
+
 const Login = ({ show, handleClose, openRegister }) => {
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
@@ -28,7 +30,7 @@ const Login = ({ show, handleClose, openRegister }) => {
 
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/auth/login",
+        `${API}/api/auth/login`,
         { email, password }
       );
 
