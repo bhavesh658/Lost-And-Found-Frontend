@@ -6,7 +6,8 @@ function ItemCard({ item, getStatusVariant }) {
   const navigate = useNavigate();
 
   // Backend ka Base URL (Jahan se images aayengi)
-  const BACKEND_URL = "http://localhost:5000";
+  // const BACKEND_URL = "http://localhost:5000";
+  const BACKEND_URL = "https://lost-and-found-backend-3cak.onrender.com";
 
   return (
     <Card className="item-card shadow-sm mb-4 h-100 border-0 rounded-4 overflow-hidden transition-hover">

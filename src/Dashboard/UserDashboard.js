@@ -46,7 +46,7 @@ function UserDashboard() {
   // ================= USER STATS =================
   const fetchStats = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/items/user-stats", {
+      const res = await axios.get("https://lost-and-found-backend-3cak.onrender.com/api/items/user-stats", {
         headers: { Authorization: `Bearer ${token}` },
       });
       setStats(res.data);
@@ -58,7 +58,7 @@ function UserDashboard() {
   // ================= ALL ITEMS =================
   const fetchAllItems = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/items/all");
+      const res = await axios.get("https://lost-and-found-backend-3cak.onrender.com/api/items/all");
       setAllItems(res.data);
     } catch (error) {
       console.error("Error fetching all items:", error);

@@ -21,7 +21,8 @@ function ItemDetails() {
     const [submitting, setSubmitting] = useState(false);
 
     const token = localStorage.getItem("token");
-    const BACKEND_URL = "http://localhost:5000";
+    // const BACKEND_URL = "http://localhost:5000";
+    const BACKEND_URL = "https://lost-and-found-backend-3cak.onrender.com";
 
     useEffect(() => {
         const loadData = async () => {

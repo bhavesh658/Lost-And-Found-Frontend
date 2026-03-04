@@ -10,7 +10,9 @@ function MyItems() {
   const [loading, setLoading] = useState(true);
 
   const token = localStorage.getItem("token");
-  const BACKEND_URL = "http://localhost:5000";
+  // const BACKEND_URL = "http://localhost:5000";
+  const BACKEND_URL = "https://lost-and-found-backend-3cak.onrender.com";
+
 
   useEffect(() => {
     fetchMyItems();

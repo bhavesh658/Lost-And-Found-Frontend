@@ -21,7 +21,7 @@ const Register = ({ show, handleClose, openLogin }) => {
 
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/auth/register",
+        "https://lost-and-found-backend-3cak.onrender.com/api/auth/register",
         { name, email, password }
       );
 
