@@ -26,6 +26,7 @@ function ItemDetails() {
     const userName = localStorage.getItem("userName") || "Student"; 
 
     const BACKEND_URL = "https://lost-and-found-backend-3cak.onrender.com";
+    // const BACKEND_URL = "http://localhost:5000";  
 
     useEffect(() => {
         const loadData = async () => {

@@ -4,13 +4,15 @@ import { Container, Row, Col, Card, Table, Button, Badge, Spinner, Modal } from 
 import { toast } from "react-toastify";
 
 const api = axios.create({
-  baseURL: "https://lost-and-found-backend-3cak.onrender.com/api",
+  // baseURL: "https://lost-and-found-backend-3cak.onrender.com/api",
+  baseURL: "http://localhost:5000/api"
 });
 
 const AdminDashboard = () => {
   const token = localStorage.getItem("token");
   api.defaults.headers.common["Authorization"] = `Bearer ${token}`;
   const BACKEND_URL = "https://lost-and-found-backend-3cak.onrender.com";
+  // const BACKEND_URL = "http://localhost:5000";
 
   const [stats, setStats] = useState({});
   const [items, setItems] = useState([]);
