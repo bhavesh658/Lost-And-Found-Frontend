@@ -6,7 +6,7 @@ import {
     Container, Row, Col, Card, Badge, Button, 
     Spinner, Modal, Form 
 } from "react-bootstrap";
-import ChatBox from "../components/ChatBox"; // ChatBox import kiya
+import ChatBox from "../pages/ChatBox"; // ChatBox import kiya
 
 function ItemDetails() {
     const { id } = useParams();

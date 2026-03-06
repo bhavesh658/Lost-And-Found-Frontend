@@ -3,7 +3,7 @@ import io from "socket.io-client";
 import { Form, Button, Card, InputGroup, Spinner } from "react-bootstrap";
 
 // Live hai toh backend URL, warna localhost
-const socket = io.connect("http://localhost:5000"); 
+const socket = io.connect("https://lost-and-found-backend-3cak.onrender.com"); 
 
 function ChatBox({ itemId, currentUser }) {
   const [message, setMessage] = useState("");
